@@ -19,7 +19,7 @@ body {
   color: var(--gris-texto);
   background: var(--blanco);
   overflow-x: hidden;
-  transition: overflow 0.3s ease; /* Para evitar el scroll cuando el menú está abierto */
+  transition: overflow 0.3s ease; 
 }
 
 /* ── NAV ── */
@@ -33,11 +33,11 @@ nav {
   position: sticky;
   top: 0;
   z-index: 100;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.3); /* Sombra actualizada */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
 }
 .nav-logo { display: flex; align-items: center; gap: 10px; }
 .nav-logo img {
-  height: 48px; /* Altura específica para el logo en el nav */
+  height: 48px; 
   background: var(--blanco);
   padding: 5px;
   border-radius: 8px;
@@ -70,7 +70,7 @@ nav {
 
 /* ── HAMBURGER ── */
 .hamburger {
-  display: none; /* Oculto por defecto en escritorio */
+  display: none; 
   background: none;
   border: none;
   cursor: pointer;
@@ -78,7 +78,7 @@ nav {
   width: 30px;
   height: 20px;
   position: relative;
-  z-index: 101; /* Por encima de los enlaces del nav */
+  z-index: 101; 
 }
 .hamburger span {
   display: block;
@@ -110,16 +110,16 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  z-index: 99; /* Debajo del hamburguesa, encima del contenido */
-  transform: translateX(100%); /* Empieza fuera de pantalla */
+  z-index: 99;
+  transform: translateX(100%); 
   transition: transform 0.3s ease-out, opacity 0.3s ease-out;
   opacity: 0;
-  pointer-events: none; /* Evita la interacción cuando está oculto */
+  pointer-events: none; 
 }
 .mobile-menu.is-active {
   transform: translateX(0);
   opacity: 1;
-  pointer-events: all; /* Permite la interacción cuando está activo */
+  pointer-events: all; 
 }
 .mobile-nav-links {
   list-style: none;
@@ -135,7 +135,7 @@ nav {
   font-weight: 700;
   letter-spacing: 1px;
   transition: color 0.2s;
-  display: block; /* Hace que toda el área sea clicable */
+  display: block; 
 }
 .mobile-nav-links a:hover { color: var(--naranja); }
 .mobile-nav-links .nav-cta {
@@ -144,7 +144,6 @@ nav {
   margin-top: 15px;
 }
 
-/* Evita el scroll del body cuando el menú móvil está abierto */
 body.no-scroll {
   overflow: hidden;
 }
@@ -250,7 +249,7 @@ body.no-scroll {
 .hero-image {
   width: 100%;
   max-width: 450px;
-  opacity: 1; /* Opacidad total para lucir los colores de la ilustración */
+  opacity: 1; 
   z-index: 2;
   filter: drop-shadow(0 20px 30px rgba(0,0,0,0.3));
 }
@@ -358,7 +357,7 @@ section { padding: 80px 5%; }
   border-radius: 12px;
   box-shadow: var(--sombra);
   background: var(--azul);
-  height: 420px; /* Fijamos la altura para que la imagen vertical no lo deforme */
+  height: 420px; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -367,8 +366,8 @@ section { padding: 80px 5%; }
 .about-main-image { 
   width: 100%; 
   height: 100%; 
-  object-fit: cover; /* Llena el espacio y recorta el sobrante de la foto vertical */
-  object-position: center; /* Centra la imagen para que no se pierda el motivo principal */
+  object-fit: cover; 
+  object-position: center; 
   opacity: 0.9; 
 }
 .accent-card {
@@ -618,9 +617,9 @@ footer {
   padding-bottom: 24px;
   border-bottom: 1px solid rgba(255,255,255,0.1);
 }
-.footer-logo { display: flex; align-items: center; gap: 10px; } /* Esto ya estaba */
+.footer-logo { display: flex; align-items: center; gap: 10px; } 
 .footer-logo img {
-  height: 44px; /* Altura específica para el logo en el footer */
+  height: 44px; 
   background: var(--blanco);
   padding: 5px;
   border-radius: 8px;
@@ -664,11 +663,11 @@ footer {
 @media (max-width: 768px) {
   .nav-links { display: none; }
   .hero { padding: 60px 5% 100px; min-height: auto; }
-  .hamburger { display: block; } /* Muestra el hamburguesa en móvil */
-  .mobile-menu { display: flex; } /* Asegura que el menú móvil sea flex en móvil */
-  .nav-logo img { height: 40px; padding: 3px; } /* Ajusta el tamaño del logo para pantallas más pequeñas */
-  .nav-logo span { font-size: 1rem; } /* Ajusta el tamaño del texto para pantallas más pequeñas */
-  .nav { height: 60px; } /* Ajusta la altura del nav para pantallas más pequeñas */
+  .hamburger { display: block; } 
+  .mobile-menu { display: flex; } 
+  .nav-logo img { height: 40px; padding: 3px; } 
+  .nav-logo span { font-size: 1rem; } 
+  .nav { height: 60px; } 
   .hero-image { display: none; }
   .about-inner, .why-inner, .contact-inner { grid-template-columns: 1fr; }
   .accent-card { bottom: 10px; right: 10px; }
