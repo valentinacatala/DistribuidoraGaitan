@@ -6,7 +6,7 @@ function sendWhatsApp() {
   const msg = encodeURIComponent(
     `Hola Distribuidora Gaitan! Les escribo desde la web.\n\n👤 Nombre: ${nombre}\n📱 Teléfono: ${tel}\n🏪 Negocio: ${negocio}\n📦 Productos de interés: ${productos}`
   );
-  window.open(`https://wa.me/5493515000000?text=${msg}`, '_blank');
+  window.open(`https://wa.me/5493512497063?text=${msg}`, '_blank');
 }
 
 // Puedes agregar más funciones JavaScript aquí si las necesitas en el futuro.
