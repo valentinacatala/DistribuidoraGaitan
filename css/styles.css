@@ -469,6 +469,19 @@ section { padding: 80px 5%; }
 .prod-icon { font-size: 2.4rem; margin-bottom: 10px; display: block; }
 .prod-card h3 { font-size: 0.95rem; font-weight: 700; margin-bottom: 6px; }
 .prod-card p { font-size: 0.78rem; color: rgba(255,255,255,0.6); line-height: 1.5; }
+
+.prod-card.special {
+  background: var(--azul-oscuro);
+  border: 2px dashed rgba(255, 255, 255, 0.3);
+}
+.prod-card.special:hover {
+  background: rgba(0, 0, 0, 0.3);
+  border-color: var(--naranja);
+}
+.prod-card.special p {
+  color: rgba(255,255,255,0.9);
+}
+
 .brands-strip {
   margin-top: 40px;
   border-top: 1px solid rgba(255,255,255,0.15);
