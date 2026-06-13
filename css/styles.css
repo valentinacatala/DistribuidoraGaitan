@@ -12,6 +12,11 @@
   --sombra: 0 4px 20px rgba(0,0,0,0.1);
 }
 
+/* Optimización de nitidez para todas las imágenes */
+img {
+  image-rendering: -webkit-optimize-contrast;
+}
+
 html { scroll-behavior: smooth; }
 
 body {
@@ -155,6 +160,7 @@ body.no-scroll {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  image-rendering: -webkit-optimize-contrast;
   min-height: 88vh;
   display: flex;
   align-items: center;
@@ -747,7 +753,13 @@ footer {
 /* ── RESPONSIVE ── */
 @media (max-width: 768px) {
   .nav-links { display: none; }
-  .hero { padding: 60px 5% 100px; min-height: auto; }
+  .hero { 
+    padding: 80px 5% 100px; 
+    min-height: 60vh; 
+    background-attachment: scroll !important; 
+    background-size: cover; 
+    background-position: center center;
+  }
   .hamburger { display: block; } 
   .mobile-menu { display: flex; } 
   .nav-logo img { height: 40px; padding: 3px; } 
